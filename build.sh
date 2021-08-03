@@ -28,7 +28,7 @@ PKTGEN_DIR=${WORK_DIR}/pktgen-dpdk-pktgen-${PKTGEN_VER}
 }
 
 
-export RTE_SDK=${WORK_DIR}/${DPDK_DIR}
+export RTE_SDK=${DPDK_DIR}
 export RTE_TARGET=${RTE_TARGET:-x86_64-native-linuxapp-gcc}
 
 make -C ${RTE_SDK} -j32 install T=${RTE_TARGET}
